@@ -4,7 +4,7 @@ const host = connection.host;
 
 export const authenticate = async (teamId, password) => {
   try {
-    const response = await fetch(`${host}/login`, {
+    const response = await fetch("https://fuku-api-specs.netlify.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
